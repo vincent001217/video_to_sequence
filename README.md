@@ -2,17 +2,18 @@
 * TensorFlow Implementation of [Sequence to Sequence – Video to Text](http://arxiv.org/abs/1505.00487)
 
 ### Usage
-* First you need to download "Microsoft Video Description Corpus"
- * Set "video_data_path" in download_videos.py accordingly.
- * Download Youtube videos by running "download_videos.py" 
-* Secondly, you need to preprocess downloaded videos
- * Set paths in cnn_utils.py and preprocess.py 
- * Sample & extract features by running "preprocessing.py"
-* Train: train() in model.py
- * You might need to change the paths in "Global Parameters" area according to your environment
+* Install caffe and tensorflow
+ * Download Microsoft Video Description Corpus and the corresponding video data
+ * Download both data from http://www.cs.utexas.edu/users/ml/clamp/videoDescription/
+* Preprocess downloaded videos
+ * Download VGG_ILSVRC_19 model from https://worksheets.codalab.org/bundles/0x54101cad2a56410c843b14153371aa5c/
+ * Set paths in cnn_utils.py and preprocess.py according to your environment
+* Sample & extract features by running "preprocessing.py"
+ * Train: train() in model.py
+ * Set paths in model.py according to your environment
+ * Test: test() in model.py
+ * Evaluation: use code found at https://github.com/vsubhashini/caption-eval with the output created by model.test() (my.txt, ref.txt)
 * Test: test() in model.py
-
-![alt tag](https://github.com/jazzsaxmafia/video_to_sequence/blob/master/plane.jpg)
 
 ### License
 * BSD License
