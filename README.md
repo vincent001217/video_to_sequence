@@ -13,7 +13,6 @@
  * Set paths in model.py according to your environment
  * Test: test() in model.py
  * Evaluation: use code found at https://github.com/vsubhashini/caption-eval with the output created by model.test() (my.txt, ref.txt)
-* Test: test() in model.py
 
 ### License
 * BSD License
